@@ -57,10 +57,10 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginHorizontal="10dp"
-            android:background="@drawable/rounded_button" />
+            android:background="@drawable/rounded_button"/>
 
         <!-- Personal Details Button -->
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnPersonalDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
             android:background="@drawable/rounded_button"/>
 
         <!-- Summary Button -->
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSummary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
             android:background="@drawable/rounded_button"/>
 
         <!-- Education Button -->
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnEducation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
             android:background="@drawable/rounded_button"/>
 
         <!-- Experience Button -->
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnExperience"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
             android:background="@drawable/rounded_button"/>
 
         <!-- Certifications Button -->
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnCertifications"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -127,11 +127,10 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginHorizontal="10dp"
-            android:background="@drawable/rounded_button"
-            />
+            android:background="@drawable/rounded_button"/>
 
         <!-- References Button -->
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnReferences"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -142,6 +141,6 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginHorizontal="10dp"
-            />
+            android:background="@drawable/rounded_button"/>
     </LinearLayout>
 </LinearLayout>
