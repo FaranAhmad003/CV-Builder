@@ -1,0 +1,14 @@
+<resources>
+    <style name="CustomButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginHorizontal">10dp</item>
+        <item name="android:background">@drawable/rounded_button</item>
+    </style>
+</resources>
