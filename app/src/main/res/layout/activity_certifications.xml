@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CertificationsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Certifications"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Certification Title Input -->
+        <EditText
+            android:id="@+id/etCertificationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Certification Title"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:background="@drawable/input_field_background"
+            android:textColorHint="@color/black"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Year of Completion Spinner -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year of Certification:"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCertYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Capture Certification Image -->
+        <Button
+            android:id="@+id/btnCaptureImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capture Certificate Image"
+            android:backgroundTint="@color/purple_700"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Display Captured Image -->
+        <ImageView
+            android:id="@+id/imgCertificate"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Add More Button -->
+        <Button
+            android:id="@+id/btnAddCertification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Another Certification"
+            android:backgroundTint="@color/purple_700"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Save and Cancel Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnSaveCertifications"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save"
+                android:backgroundTint="@color/purple_700"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/btnCancelCertifications"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:backgroundTint="@color/gray"
+                android:textColor="@color/white"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

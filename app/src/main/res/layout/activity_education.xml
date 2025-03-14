@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".EducationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Education Details"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Education Level Radio Buttons -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Education Level:"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupEducationLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/radioMatric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matric"
+                android:textColorHint="@color/gray"/>
+
+            <RadioButton
+                android:id="@+id/radioIntermediate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intermediate"
+                android:textColorHint="@color/gray"/>
+
+            <RadioButton
+                android:id="@+id/radioBachelors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bachelors"
+                android:textColorHint="@color/gray"/>
+        </RadioGroup>
+
+        <!-- Year of Completion Spinner -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year of Completion:"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="@color/black"/>
+
+        <!-- Institution Name EditText -->
+        <EditText
+            android:id="@+id/etInstitution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Institution Name"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:background="@drawable/input_field_background"
+            android:layout_marginBottom="20dp"
+            android:textColorHint="@color/gray"/>
+
+        <!-- Add More Button -->
+        <Button
+            android:id="@+id/btnAddMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Another Education"
+            android:backgroundTint="@color/purple_700"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Save and Cancel Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnSaveEducation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save"
+                android:backgroundTint="@color/purple_700"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/btnCancelEducation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:backgroundTint="@color/gray"
+                android:textColor="@color/white"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

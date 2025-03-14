@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ExperienceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Work Experience"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Job Title Input -->
+        <EditText
+            android:id="@+id/etJobTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Job Title"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="12dp"
+            android:background="@drawable/input_field_background"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Company Name Input -->
+        <EditText
+            android:id="@+id/etCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Company Name"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="12dp"
+            android:background="@drawable/input_field_background"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Job Type (Radio Buttons) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Type:"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupJobType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioFullTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:text="Full-time"/>
+
+            <RadioButton
+                android:id="@+id/radioPartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:text="Part-time"/>
+
+            <RadioButton
+                android:id="@+id/radioInternship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:text="Internship"/>
+
+            <RadioButton
+                android:id="@+id/radioContract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:text="Contract"/>
+        </RadioGroup>
+
+        <!-- Start Year Spinner -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Year:"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerStartYear"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <!-- End Year Spinner -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Year:"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerEndYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Add More Button -->
+        <Button
+            android:id="@+id/btnAddExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Another Experience"
+            android:backgroundTint="@color/purple_700"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Save and Cancel Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnSaveExperience"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save"
+                android:backgroundTint="@color/purple_700"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/btnCancelExperience"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:backgroundTint="@color/gray"
+                android:textColor="@color/white"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

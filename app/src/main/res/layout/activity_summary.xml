@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white"
+    tools:context=".SummaryActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Summary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:id="@+id/etSummary"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:hint="Enter Summary"
+        android:gravity="top|start"
+        android:background="@drawable/input_field_background"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="@color/gray"/>
+
+    <!-- Save and Cancel Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSaveSummary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:backgroundTint="@color/purple_700"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/btnCancelSummary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/white"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -9,36 +9,29 @@
     tools:context=".MainActivity">
 
     <!-- Toolbar with Centered Image & Text -->
-    <androidx.appcompat.widget.Toolbar
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/white"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:gravity="center"
+        android:orientation="horizontal"
         android:padding="10dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/folder"
+            android:layout_marginEnd="8dp"/>
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/folder"
-                android:layout_marginEnd="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CV Builder"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CV Builder"
-                android:textSize="20sp"
-                android:textColor="@color/black"/>
-        </LinearLayout>
-    </androidx.appcompat.widget.Toolbar>
-
-    <!-- Profile Picture Selection Button (No ImageView) -->
+    <!-- Profile Picture Selection Button -->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnProfile"
         android:layout_width="match_parent"
@@ -54,10 +47,10 @@
     <!-- Button Container -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="vertical">
 
-        <!-- Personal Details Button -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnPersonalDetails"
             android:layout_width="match_parent"
@@ -69,7 +62,6 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_button"/>
 
-        <!-- Summary Button -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSummary"
             android:layout_width="match_parent"
@@ -81,7 +73,6 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_button"/>
 
-        <!-- Education Button -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnEducation"
             android:layout_width="match_parent"
@@ -93,7 +84,6 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_button"/>
 
-        <!-- Experience Button -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnExperience"
             android:layout_width="match_parent"
@@ -105,7 +95,6 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_button"/>
 
-        <!-- Certifications Button -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnCertifications"
             android:layout_width="match_parent"
@@ -117,7 +106,6 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_button"/>
 
-        <!-- References Button -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnReferences"
             android:layout_width="match_parent"
@@ -129,4 +117,18 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_button"/>
     </LinearLayout>
+
+    <!-- Submit Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button"/>
+
 </LinearLayout>
