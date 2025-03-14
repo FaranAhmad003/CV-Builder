@@ -19,15 +19,48 @@ public class MainActivity extends AppCompatActivity {
     private static final String PREFS_NAME = "CVBuilderPrefs";
     private static final String PROFILE_IMAGE_URI = "profile_image_uri";
 
+    private Button btnProfile, btnPersonalDetails, btnSummary, btnEducation, btnExperience, btnCertifications, btnReferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnProfile = findViewById(R.id.btnProfile);
+        // Initialize buttons
+        btnProfile = findViewById(R.id.btnProfile);
+        btnPersonalDetails = findViewById(R.id.btnPersonalDetails);
+        btnSummary = findViewById(R.id.btnSummary);
+        btnEducation = findViewById(R.id.btnEducation);
+        btnExperience = findViewById(R.id.btnExperience);
+        btnCertifications = findViewById(R.id.btnCertifications);
+        btnReferences = findViewById(R.id.btnReferences);
 
         // Open gallery when "Select Profile Picture" button is clicked
         btnProfile.setOnClickListener(v -> openGallery());
+
+        // Navigate to Personal Details screen
+        btnPersonalDetails.setOnClickListener(v -> openActivity(PersonalDetailsActivity.class));
+
+        // Navigate to Summary screen (To be implemented)
+       /* btnSummary.setOnClickListener(v -> openActivity(SummaryActivity.class));
+
+        // Navigate to Education screen (To be implemented)
+        btnEducation.setOnClickListener(v -> openActivity(EducationActivity.class));
+
+        // Navigate to Experience screen (To be implemented)
+        btnExperience.setOnClickListener(v -> openActivity(ExperienceActivity.class));
+
+        // Navigate to Certifications screen (To be implemented)
+        btnCertifications.setOnClickListener(v -> openActivity(CertificationsActivity.class));
+
+        // Navigate to References screen (To be implemented)
+        btnReferences.setOnClickListener(v -> openActivity(ReferencesActivity.class));*/
+    }
+
+    // Generic method to start a new activity
+    private void openActivity(Class<?> activityClass) {
+        Intent intent = new Intent(MainActivity.this, activityClass);
+        startActivity(intent);
     }
 
     // Launcher for picking an image (without displaying it)
